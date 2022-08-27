@@ -17,16 +17,22 @@ img {
 	width: 300px;
 	margin: 5px 0px 0px 115px;
 }
-.current-temp {
-	font-size: 45px;
-	margin-top: 33px;
-}
 #fahrenheit-current-high {
 	color: brown;
 	font-weight: bold;
 }
 #fahrenheit-current-low {
 	color: darkcyan;
+}
+#github {
+	text-align: center;
+}
+#github-link {
+	color: #5c636a;
+}
+.current-temp {
+	font-size: 45px;
+	margin-top: 33px;
 }
 .defining-location,
 .defining-forecast {
