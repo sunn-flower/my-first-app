@@ -1,0 +1,76 @@
+body {
+	margin: 40px 50px 0px 200px;
+	font-family: "Montserrat", sans-serif;
+	background-color: #e6e6e6;
+}
+h1 {
+	font-size: 55px;
+	margin: 40px 0px 0px 5px;
+	color: #5c636a;
+}
+h2 {
+	font-size: 25px;
+	margin: 0px 0px 22px 8px;
+	color: #5c636a;
+}
+img {
+	width: 300px;
+	margin: 5px 0px 0px 115px;
+}
+.current-temp {
+	font-size: 45px;
+	margin-top: 33px;
+}
+#fahrenheit-current-high {
+	color: brown;
+	font-weight: bold;
+}
+#fahrenheit-current-low {
+	color: darkcyan;
+}
+.defining-location,
+.defining-forecast {
+	font-family: "Edu SA Beginner", cursive;
+	font-size: 18px;
+}
+.forecast-container {
+	margin: 20px 0px 15px 3px;
+}
+.forecast-day,
+.forecast-high {
+	font-weight: bold;
+}
+.forecast-day {
+	font-weight: bold;
+}
+.forecast-high {
+	color: brown;
+}
+.forecast-low {
+	color: darkcyan;
+}
+.thursday {
+	margin: 0px 39px 0px 30px;
+}
+.friday {
+	margin: 0px 70px 0px 31px;
+}
+.saturday {
+	margin: 0px 41px 0px 30px;
+}
+.sunday {
+	margin: 0px 51px 0px 30px;
+}
+.monday {
+	margin: 0px 56px 0px 30px;
+}
+.night-icon {
+	margin-left: 27px;
+}
+.search-bar {
+	margin-top: 30px;
+}
+.dropdown,
+button {
+	margin: 20px 0px 15px 0px;
+}

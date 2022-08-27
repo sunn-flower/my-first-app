@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/14e57511b5.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<link rel="stylesheet" href="src/style.css" />
+		<title>Weather App</title>
+	</head>
+	<body>
+		<div class="container background">
+			<div class="row">
+				<div class="col-6">
+					<div class="defining-location">Current city:</div>
+					<h1 id="city-name">Elko, Nevada</h1>
+					<h2></h2>
+				</div>
+				<div class="col-2 current-temp">
+					<span id="fahrenheit-current-high">98°F</span>
+					<br />
+					<span id="fahrenheit-current-low">60°F</span>
+				</div>
+				<div class="col-4">
+					<form id="search-bar">
+						<input
+							type="text"
+							placeholder="Search for another city"
+							autocomplete="off"
+							id="city-input"
+						/>
+						<input type="submit" value="search" />
+					</form>
+					<div class="dropdown">
+						<a
+							class="btn btn-secondary dropdown-toggle"
+							href="#"
+							role="button"
+							id="dropdownMenuLink"
+							data-bs-toggle="dropdown"
+							aria-expanded="true"
+						>
+							See popular cities
+						</a>
+
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<li><a class="dropdown-item-1" href="#">Paris, France</a></li>
+							<li>
+								<a class="dropdown-item-2" href="#"
+									>San Francisco, California</a
+								>
+							</li>
+							<li>
+								<a class="dropdown-item-3" href="#">Manhattan, New York</a>
+							</li>
+						</ul>
+					</div>
+
+					<button type="button" class="btn btn-secondary" id="temp-unit">
+						Change to Celsius
+					</button>
+					<br />
+					<button
+						type="button"
+						class="btn btn-secondary"
+						id="show-current-city"
+					>
+						Current Location
+					</button>
+				</div>
+			</div>
+			<div class="forecast-container">
+				<div class="defining-forecast">Next five days:</div>
+				<br />
+				<div class="row">
+					<div class="col-6">
+						<ul class="list-group">
+							<li class="list-group-item">
+								<i class="fa-solid fa-cloud-sun"></i>
+								<span class="forecast-day thursday">Thursday:</span>
+								<span class="forecast-high">102°</span>
+								/
+								<span class="forecast-low">61°</span>
+								<i class="fa-solid fa-cloud-moon night-icon"></i>
+							</li>
+							<li class="list-group-item">
+								<i class="fa-solid fa-cloud-sun"></i>
+								<span class="forecast-day friday">Friday:</span>
+								<span class="forecast-high">99°</span>
+								/
+								<span class="forecast-low">59°</span>
+								<i class="fa-solid fa-moon night-icon"></i>
+							</li>
+							<li class="list-group-item">
+								<i class="fa-solid fa-cloud-sun"></i>
+								<span class="forecast-day saturday">Saturday:</span>
+								<span class="forecast-high">101°</span>
+								/
+								<span class="forecast-low">63°</span>
+								<i class="fa-solid fa-cloud-moon night-icon"></i>
+							</li>
+							<li class="list-group-item">
+								<i class="fa-solid fa-cloud-sun"></i>
+								<span class="forecast-day sunday">Sunday:</span>
+								<span class="forecast-high">100°</span>
+								/
+								<span class="forecast-low">64°</span>
+								<i class="fa-solid fa-cloud-moon night-icon"></i>
+							</li>
+							<li class="list-group-item">
+								<i class="fa-solid fa-cloud-sun"></i>
+								<span class="forecast-day monday">Monday:</span>
+								<span class="forecast-high">97°</span>
+								/
+								<span class="forecast-low">61°</span>
+								<i class="fa-solid fa-cloud-moon night-icon"></i>
+							</li>
+						</ul>
+					</div>
+					<div class="col-6">
+						<img
+							src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/040/323/original/jm-capriola-co.jpg?1657779253"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="src/java.js"></script>
+	</body>
+</html>
